@@ -1,4 +1,4 @@
-package atvPessoa;
+package atvsDois.atvPessoa;
 
 public class Pessoa {
     private String nome;

@@ -1,4 +1,4 @@
-package soma;
+package atvsUm.soma;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class Soma {
         /*System.out.println("Digite dois valores para somar");
         System.out.println("Primeiro valor: ");int a = sc.nextInt();
         System.out.println("Segundo valor: ");int b = sc.nextInt();
-        System.out.println("A soma vale: " + (a + b));
+        System.out.println("A atvsUm.soma vale: " + (a + b));
         sc.close();*/
 
         System.out.print("Digite o primeiro número decimal: ");
@@ -18,7 +18,7 @@ public class Soma {
         double d = sc.nextDouble();
 
         double soma = c + d;
-        System.out.println("A soma vale: " + soma);
+        System.out.println("A atvsUm.soma vale: " + soma);
 
         sc.close();
     }

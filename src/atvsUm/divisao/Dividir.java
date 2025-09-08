@@ -1,4 +1,4 @@
-package divisao;
+package atvsUm.divisao;
 
 import java.util.Scanner;
 

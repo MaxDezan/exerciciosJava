@@ -1,4 +1,4 @@
-package areaCirculo;
+package atvsUm.areaCirculo;
 import java.util.Scanner;
 
 public class AreaCirculo {

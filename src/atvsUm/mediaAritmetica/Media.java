@@ -1,4 +1,4 @@
-package mediaAritmetica;
+package atvsUm.mediaAritmetica;
 import java.util.Scanner;
 
 public class Media {

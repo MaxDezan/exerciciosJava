@@ -1,4 +1,4 @@
-package atvEcoador;
+package atvsUm.atvEcoador;
 
 import java.util.Scanner;
 

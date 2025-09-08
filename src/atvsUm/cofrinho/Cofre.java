@@ -1,4 +1,4 @@
-package cofrinho;
+package atvsUm.cofrinho;
 
 import java.math.BigDecimal;
 import java.util.Scanner;
@@ -9,7 +9,7 @@ public class Cofre {
 
         BigDecimal cofre = BigDecimal.ZERO;
 
-        System.out.println("Bem-vindo(a) ao seu cofrinho.");
+        System.out.println("Bem-vindo(a) ao seu atvsUm.cofrinho.");
         System.out.print("Digite quanto deseja depositar: ");
         BigDecimal depositar = sc.nextBigDecimal();
         cofre = cofre.add(depositar);

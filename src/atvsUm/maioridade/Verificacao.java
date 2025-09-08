@@ -1,4 +1,4 @@
-package maioridade;
+package atvsUm.maioridade;
 
 import java.util.Scanner;
 
