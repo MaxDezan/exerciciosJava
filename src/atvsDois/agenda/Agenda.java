@@ -49,7 +49,7 @@ public class Agenda {
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
             opcao = sc.nextInt();
-            sc.nextLine(); // consumir quebra de linha
+            sc.nextLine();
 
             switch (opcao) {
                 case 1 -> agenda.addContato();
