@@ -1,4 +1,4 @@
-package herancaConceito;
+package atvsTres.herancaConceito;
 
 public class M {
     public static void main(String[] args) {

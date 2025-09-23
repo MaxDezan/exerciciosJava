@@ -1,4 +1,4 @@
-package herancaConceito;
+package atvsTres.herancaConceito;
 
 public class Veiculo {
     private String cor;

@@ -1,6 +1,6 @@
-package herancaConceito;
+package atvsTres.herancaConceito;
 
-public class Moto extends Veiculo{
+public class Moto extends Veiculo {
     private boolean temBau;
 
     public Moto(String cor, String placa, boolean temBau) {
