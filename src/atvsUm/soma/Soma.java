@@ -18,7 +18,7 @@ public class Soma {
         double d = sc.nextDouble();
 
         double soma = c + d;
-        System.out.println("A atvsUm.soma vale: " + soma);
+        System.out.println("A soma vale: " + soma);
 
         sc.close();
     }

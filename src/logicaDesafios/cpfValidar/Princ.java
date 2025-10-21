@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Princ {
     public static void verificar(String digitos) {
+        digitos = digitos.replaceAll("\\D", "");
         int soma = 0;
         for (int i = 0; i < digitos.length(); i++) {
             char c = digitos.charAt(i);
