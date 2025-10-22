@@ -1,5 +1,7 @@
 package atvsCinco.centralAvisos;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Prin {
@@ -9,45 +11,36 @@ public class Prin {
     }
 
     public static void main(String[] args) {
-        int resposta;
         boolean enviarNovamente = true;
-        String destino;
-
         Scanner input = new Scanner(System.in);
+
+        Map<Integer, Aviso> tiposAviso = new HashMap<>();
+        tiposAviso.put(1, new EmailAviso());
+        tiposAviso.put(2, new PushAviso());
+        tiposAviso.put(3, new SmsAviso());
+
 
         while (enviarNovamente) {
             System.out.println("Qual a mensagem que gostaria de enviar:");
             String mensagem = input.nextLine();
 
             System.out.println("Qual o destino?");
-            destino = input.nextLine();
-
+            String destino = input.nextLine();
 
             System.out.println("Como deseja enviar: 1 = Email, 2 = Push, 3 = Sms");
             int tipoEnvio = input.nextInt();
             input.nextLine();
 
-            switch (tipoEnvio) {
-                case 1:
-                    EmailAviso aviso = new EmailAviso();
-                    Prin.enviarAviso(aviso, mensagem, destino);
-                    break;
-                case 2:
-                    PushAviso aviso2 = new PushAviso();
-                    Prin.enviarAviso(aviso2, mensagem, destino);
-                    break;
-                case 3:
-                    SmsAviso aviso3 = new SmsAviso();
-                    Prin.enviarAviso(aviso3, mensagem, destino);
-                    break;
-                default:
-                    System.out.println("Tipo invalido");
-                    break;
+            Aviso aviso = tiposAviso.get(tipoEnvio);
+
+            if (aviso != null) {
+                enviarAviso(aviso, mensagem, destino);
+            } else {
+                System.out.println("Tipo inválido!");
             }
 
-
             System.out.println("Deseja enviar uma nova mensagem? 1 = Sim, 2 = Não");
-            resposta = input.nextInt();
+            int resposta = input.nextInt();
             input.nextLine();
 
             if (resposta == 2) {
@@ -56,6 +49,4 @@ public class Prin {
             }
         }
     }
-
-
 }
