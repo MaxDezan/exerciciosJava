@@ -17,7 +17,6 @@ public abstract class ExportadorBase implements Exportar {
         return formatarCabecalho() + gerarCorpo(dados) + formatarRodape();
     }
 
-    // Formatação básica genérica
     protected String formatarCabecalho() {
         return titulo + " | " + data + "\n";
     }
