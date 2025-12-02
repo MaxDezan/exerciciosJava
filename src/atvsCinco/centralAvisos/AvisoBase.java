@@ -21,6 +21,6 @@ public class AvisoBase implements Aviso {
 
     @Override
     public String status() {
-            return enviado ? tipo + " status: Enviado com sucesso!" : " status: Mensagem não enviada." + tipo + ".";
+            return enviado ? tipo + "Status: Enviado com sucesso!" : "Status: Mensagem não enviada (" + tipo + ")";
         }
 }

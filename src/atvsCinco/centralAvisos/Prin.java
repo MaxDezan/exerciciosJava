@@ -28,15 +28,20 @@ public class Prin {
             String destino = input.nextLine();
 
             System.out.println("Como deseja enviar: 1 = Email, 2 = Push, 3 = Sms");
-            int tipoEnvio = input.nextInt();
-            input.nextLine();
-
-            Aviso aviso = tiposAviso.get(tipoEnvio);
-
-            if (aviso != null) {
-                enviarAviso(aviso, mensagem, destino);
-            } else {
+            if (!input.hasNextInt()) {
                 System.out.println("Tipo inválido!");
+                break;
+            } else {
+                int tipoEnvio = input.nextInt();
+                input.nextLine();
+
+                Aviso aviso = tiposAviso.get(tipoEnvio);
+
+                if (aviso != null) {
+                    enviarAviso(aviso, mensagem, destino);
+                } else {
+                    System.out.println("Tipo inválido!");
+                }
             }
 
             System.out.println("Deseja enviar uma nova mensagem? 1 = Sim, 2 = Não");
